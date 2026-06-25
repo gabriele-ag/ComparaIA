@@ -2,6 +2,8 @@
 
 Il progetto è una Web-App React di comparazione e catalogazione delle intelligenze artificiali
 
+Per provare la web app, ecco l'url: https://compara-ia.vercel.app/
+
 
 ### 🚀 Funzionalità principali
 
