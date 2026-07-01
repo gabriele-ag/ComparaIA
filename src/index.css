@@ -1,3 +1,6 @@
+/* SITE-FONT */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
 /* CSS RESET */
 * {
   box-sizing: border-box;
@@ -5,8 +8,15 @@
   padding: 0;
 }
 
-/* SITE-FONT */
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+:root {
+  --common-color-site-1: #020616;
+  --common-color-site-2: #4f46e5;
+  --common-color-site-3: #a5b4fc;
+  --common-color-site-4: #FFFFFF;
+  --common-color-site-5: #F1D302;
+  --common-color-font: #545c8e;
+  --common-color-font-2: #181817;
+}
 
 body, input, select, textarea, button {
   font-family: 'Space Grotesk', sans-serif !important;
@@ -32,13 +42,6 @@ body {
 }
 
 /* Utilities */
-
-:root {
-  --common-color-site-1: #020616;
-  --common-color-site-2: #4f46e5;
-  --common-color-site-3: #a5b4fc;
-  --common-color-font: #545c8e;
-}
 
 .container {
   margin: auto;

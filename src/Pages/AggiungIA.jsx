@@ -2,7 +2,7 @@ import { GlobalContext } from "../contexts/GlobalContext"
 
 import { useContext, useState, useRef, useEffect } from "react"
 
-import "./CSS/AggiungiIA.css"
+import styles from "./CSS/aggiungiia.module.css"
 
 const AggiungiIA = () => {
 
@@ -106,24 +106,29 @@ const AggiungiIA = () => {
 
 
     return (
-        <section className="section-addai">
-            <div className="container">
-                <h1 className="addai-title">Aggiungi una IA <i className="fa-solid fa-plus"></i></h1>
-                <form className="addai-form-flex" onSubmit={handleSubmit}>
-
+    <section className={styles.sectionAddAi}>
+    <div className="container">
+        <h1 className={styles.addAiTitle}>
+            Aggiungi una IA <i className="fa-solid fa-plus"></i>
+        </h1>
+        <form className={styles.addAiFormFlex} onSubmit={handleSubmit}>
+            
+            <div className={styles.inputBox}>         
                 <label>Nome</label>
                 <input
                     ref={titleRef}
-                    className="addai-input"
+                    className={styles.addAiInput}
                     type="text"
-                    placeholder="Immetti il nome della IA..."
+                    placeholder="Gemini, Copilot..."
                 />
-                {errors.title && <p className="error-msg">{errors.title}</p>}
+                {errors.title && <p className={styles.errorMsg}>{errors.title}</p>}
+            </div>
 
+            <div className={styles.inputBox}>
                 <label>Categoria</label>
                 <select
                     ref={categoryRef}
-                    className="addai-input"
+                    className={styles.addAiInput}
                     defaultValue=""
                 >
                     <option value="">Tutte le categorie</option>
@@ -135,105 +140,127 @@ const AggiungiIA = () => {
                     <option value="Ricerca AI">Ricerca AI</option>
                     <option value="Marketing & SEO">Marketing & SEO</option>
                 </select>
-                {errors.category && <p className="error-msg">{errors.category}</p>}
+                {errors.category && <p className={styles.errorMsg}>{errors.category}</p>}
+            </div>
 
+            <div className={styles.inputBox}>
                 <label>Brand</label>
                 <input
                     ref={brandRef}
-                    className="addai-input"
+                    className={styles.addAiInput}
                     type="text"
-                    placeholder="Immetti il nome del brand..."
+                    placeholder="Google, OpenAI..."
                 />
+            </div>
 
+            <div className={styles.inputBox}>
                 <label>Descrizione</label>
                 <textarea
                     ref={descriptionRef}
-                    className="addai-input"
-                    placeholder="Cosa fa la IA?..."
+                    className={styles.addAiInput}
+                    placeholder="ES: crea immagini partendo da un modello dato dall'utente..."
                 />
-                {errors.description && <p className="error-msg">{errors.description}</p>}
+                {errors.description && <p className={styles.errorMsg}>{errors.description}</p>}
+            </div>
 
+            <div className={styles.inputBox}>
                 <label>Piattaforme supportate</label>
                 <input
                     ref={platformsRef}
-                    className="addai-input"
+                    className={styles.addAiInput}
                     type="text"
-                    placeholder="Scrivi le piattaforme supportate..."
+                    placeholder="Android, Windows..."
                 />
+            </div>
 
+            <div className={styles.inputBox}>
                 <label>Linguaggi supportati</label>
                 <input
                     ref={languagesRef}
-                    className="addai-input"
+                    className={styles.addAiInput}
                     type="text"
-                    placeholder="Scrivi i linguaggi supportati..."
+                    placeholder="EN, IT, FR..."
                 />
+            </div>
 
+            <div className={styles.inputBox}>
                 <label>Prezzo</label>
                 <input
                     ref={priceRef}
-                    className="addai-input"
+                    className={styles.addAiInput}
                     type="text"
                     placeholder="Mensile? Annuale? Freemium?..."
                 />
-                {errors.price && <p className="error-msg">{errors.price}</p>}
+                {errors.price && <p className={styles.errorMsg}>{errors.price}</p>}        
+            </div>
 
+            <div className={styles.inputBox}>
                 <label>Anno di rilascio</label>
                 <input
                     ref={releaseYearRef}
                     defaultValue="2018"
-                    className="addai-input"
+                    className={styles.addAiInput}
                     type="number"
-                    placeholder="Quando è stata rilasciato..."
                 />
-                {errors.releaseYear && <p className="error-msg">{errors.releaseYear}</p>}
+                {errors.releaseYear && <p className={styles.errorMsg}>{errors.releaseYear}</p>}        
+            </div>
 
-                <label>Integrato in:</label>
+            <div className={styles.inputBox}>
+                <label>Integrata in:</label>
                 <input
                     ref={integrationsRef}
-                    className="addai-input"
+                    className={styles.addAiInput}
                     type="text"
-                    placeholder="È stata integrata in..."
+                    placeholder="Visual Studio, Discord..."
                 />
+            </div>
 
+            <div className={styles.inputBox}>
                 <label>Casi d'uso:</label>
                 <input
                     ref={useCasesRef}
-                    className="addai-input"
+                    className={styles.addAiInput}
                     type="text"
-                    placeholder="ES: Presentazioni, Design, ecc ecc..."
+                    placeholder="Presentazioni, Design, Codice..."
                 />
+            </div>
 
+            <div className={styles.inputBox}>
                 <label>Voto?</label>
                 <input
                     ref={ratingRef}
                     defaultValue="0"
-                    className="addai-input"
+                    className={styles.addAiInput}
                     type="number"
-                    placeholder="Immetti il voto..."
                 />
-                {errors.rating && <p className="error-msg">{errors.rating}</p>}
+                {errors.rating && <p className={styles.errorMsg}>{errors.rating}</p>}    
+            </div>
 
+            <div className={styles.inputBox}>
                 <label>URL del logo</label>
                 <input
                     ref={logoUrlRef}
-                    className="addai-input"
+                    className={styles.addAiInput}
                     type="text"
-                    placeholder="Immetti l'url per l'immagine..."
+                    placeholder="https://logoimmagine"
                 />
+            </div>
 
+            <div className={styles.inputBox}>
                 <label>Sito Web</label>
                 <input
                     ref={websiteRef}
-                    className="addai-input"
+                    className={styles.addAiInput}
                     type="text"
                     placeholder="Immetti il link del sito..."
                 />
+            </div>
 
+            <div className={styles.inputBox}>
                 <label>Livello Privacy</label>
                 <select
                     ref={privacyLevelRef}
-                    className="addai-input"
+                    className={styles.addAiInput}
                     defaultValue=""
                 >
                     <option value="">Seleziona il livello</option>
@@ -241,27 +268,32 @@ const AggiungiIA = () => {
                     <option value="Medium">Medium</option>
                     <option value="Low">Low</option>
                 </select>
-                {errors.privacyLevel && <p className="error-msg">{errors.privacyLevel}</p>}
+                {errors.privacyLevel && <p className={styles.errorMsg}>{errors.privacyLevel}</p>}
+            </div>
 
+            <div className={styles.checkboxBox}>
                 <label>Ha una versione gratuita?</label>
                 <input
                     ref={hasFreeVersionRef}
-                    className="checkbox"
+                    className={styles.checkbox}
                     type="checkbox"
-                />
+                />   
+            </div>
 
+            <div className={styles.checkboxBox}>
                 <label>API disponibile?</label>
                 <input
                     ref={apiAvailableRef}
-                    className="checkbox"
+                    className={styles.checkbox}
                     type="checkbox"
                 />
-
-                <button type="submit" className="addai-btn-confirm">Conferma</button>
-                </form>
             </div>
-        </section>
+
+            <button type="submit" className={styles.addAiBtnConfirm}>Conferma</button>
+        </form>
+    </div>
+    </section>
     )
 }
 
-export default AggiungiIA
+export default AggiungiIA;

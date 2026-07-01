@@ -15,7 +15,7 @@
     border: none;
     font-size: 30px;
     cursor: pointer;
-    color: var(--common-color-1);
+    color: var(--common-color-site-4);
     display: none;
 }
 
@@ -23,11 +23,12 @@
     position: absolute;
     top: 70px;
     right: 0;
-    background-color: var(--common-color-1);
+    background-color: var(--common-color-site-1);
+    backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
     width: 100%;
-    transform: translateY(-100%);
+    transform: translateY(-150%);
     transition: transform 0.5s ease-in-out;
-    opacity: 0;
     pointer-events: none;
     z-index: 9999;
     display: none;
@@ -46,7 +47,7 @@
 
 .burgerLink {
     display: block;
-    color: var(--common-color-4);
+    color: var(--common-color-site-4);
     font-weight: bold;
     font-size: 15px;
     padding: 10px 0;

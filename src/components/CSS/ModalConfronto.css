@@ -1,34 +1,34 @@
 :root {
-    --common-color-1: #181817;
-    --common-color-2: #F1D302;
-    --common-color-3: #00BFA6;
-    --common-color-4: #FFFFFF;
-    --common-color-5: #52489C;
+  --common-color-1: #181817;
+  --common-color-2: #f1d302;
+  --common-color-3: #00bfa6;
+  --common-color-4: #ffffff;
+  --common-color-5: #52489c;
 }
 
 .modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgb(24, 24, 23, 0.5);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-    color: var(--common-color-4);
-    padding: 100px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(24, 24, 23, 0.5);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  color: var(--common-color-4);
+  padding: 100px 0;
 }
 
 .modal-content {
-    height: 100vh;
-    width: 100vw;
-    overflow-y: auto;
-    padding: 40px;
-    border-radius: 10px;
+  height: 100vh;
+  width: 100vw;
+  overflow-y: auto;
+  padding: 40px;
+  border-radius: 10px;
 }
 
 .modal-box-title {
@@ -38,12 +38,12 @@
 }
 
 .modal-btn-close {
-    background-color: transparent;
-    color: var(--common-color-4);
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
-    transition: color 0.2s ease-in-out;
+  background-color: transparent;
+  color: var(--common-color-4);
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
 }
 
 .modal-btn-close:hover {
@@ -51,27 +51,27 @@
 }
 
 .modal-title {
-    text-align: center;
-    margin-bottom: 50px;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .modal-rating {
-    color: #F1D302;
+  color: #f1d302;
 }
 
 /* TABELLA */
 
 .modal-feature-title {
-    color: var(--common-color-site-3)
+  color: var(--common-color-site-3);
 }
 
 .modal-website-ai {
-    transition: color 0.5s ease-in-out
+  transition: color 0.5s ease-in-out;
 }
 
 .modal-website-ai:hover {
-    text-decoration: underline;
-    color: var(--common-color-site-3);
+  text-decoration: underline;
+  color: var(--common-color-site-3);
 }
 
 .modal-compare-table {

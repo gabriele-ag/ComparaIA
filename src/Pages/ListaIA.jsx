@@ -188,15 +188,14 @@ const ListaIA = () => {
                                     </button>
                                 </div>
                             </form>
-                        </div>
-
+                        
                         {/* Elenco delle IA */}
-                        <ul className={`d-flex row ${styles.listContainer}`}>
+                        <ul className={styles.listContainer}>
                             {filteredAI.length === 0 ? (
                                 <p className={styles.noResultSearch}>Nessun risultato. Cosa stai cercando? 🤔</p>
                             ) : (
                                 filteredAI.map((curElem) => (
-                                    <li className="col-lg-4" key={curElem.id}>
+                                    <li key={curElem.id}>
                                         <CardAI
                                             id={curElem.id}
                                             title={curElem.title}
@@ -213,6 +212,8 @@ const ListaIA = () => {
                                 ))
                             )}
                         </ul>
+                        </div>
+
 
                         {/* Modale Eliminazione */}
                         {isDeleteModalOpen && (

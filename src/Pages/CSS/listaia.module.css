@@ -6,15 +6,6 @@
   --common-color-6: #fd5f37;
 }
 
-/* .listContainer {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  gap: 20px;
-  list-style: none;
-  padding: 0;
-} */
-
 .sectionListaIA {
   padding: 100px 0px;
 }
@@ -26,13 +17,20 @@
 }
 
 .titleSection {
-    font-size: 30px;
-    color: rgb(255, 255, 255);
-    margin-bottom: 15px;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 15px;
 }
 
 .subtitleSection {
   color: rgb(255, 255, 255, 0.5);
+}
+
+.listContainer {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .boxInput {
@@ -44,7 +42,7 @@
 
 .searchInput,
 .categoryInput {
-  color: rgb(255, 255, 255);
+  color: var(--common-color-site-4);
   margin-right: 20px;
   background-color: rgb(59, 68, 92);
   border: 1px solid rgb(30 41 59 / 0.8);
@@ -94,7 +92,7 @@
 
 .btnConfronta:hover {
   background-color: white;
-  color: var(--common-color-site-2)
+  color: var(--common-color-site-2);
 }
 
 .modalOverlayDelete {
@@ -103,7 +101,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(24, 24, 23, 0.7); /* Sistemata sintassi rgb con opacità */
+  background-color: rgba(24, 24, 23, 0.7);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -175,6 +173,11 @@
 
 /* 💻 TABLET */
 @media screen and (max-width: 768px) {
+
+  .listContainer {
+    display: block;
+  }
+
   .searchInput {
     margin-bottom: 10px;
   }
@@ -182,6 +185,11 @@
 
 /* 📱 MOBILE */
 @media screen and (max-width: 375px) {
+
+    .titleSection {
+        font-size: 25px;
+    }
+
   .searchInput {
     margin-right: 0;
   }

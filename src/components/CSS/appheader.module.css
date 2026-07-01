@@ -6,7 +6,9 @@
 }
 
 header {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
     background-color: var(--common-color-site-1);
     width: 100%;
     display: flex;

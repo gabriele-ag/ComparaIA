@@ -7,14 +7,14 @@
     justify-content: space-between;
     flex-direction: column;
     gap: 20px;
-    margin-bottom: 20px;
     background-color: rgb(15 23 42 / 0.6);
-    transition: backgroud-color ;
+    transition: background-color 0.2s ease-in-out;
+    transition: border 0.2s ease-in-out ;
 }
 
 .cardAi:hover {
-    background-color: #0F172A;
-    border: 1px solid var(--common-color-5);
+    background-color: rgb(15, 23, 42);
+    border: 1px solid var(--common-color-site-3);
 }
 
 .cardTitle {
@@ -48,6 +48,7 @@
 
 .btnDetails,
 .btnCompare {
+    text-align: center;
     border: none;
     border-radius: 5px;
     padding: 10px;
@@ -108,8 +109,16 @@
     gap: 20px;
 }
 
+@media screen and (max-width: 768px) {
+
+    .cardAi {
+        margin-bottom: 20px;
+    }
+}
+
 
 @media screen and (max-width: 375px) {
+
     .cardBtnBox {
         flex-direction: column;
         gap: 15px;

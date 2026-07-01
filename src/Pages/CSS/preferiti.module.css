@@ -1,0 +1,123 @@
+.favSection {
+    padding: 120px 0px;
+}
+
+.favFlexBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.favTitle,
+.favNone,
+.favTitleAi,
+.favCategory,
+.favBtnDetails,
+.favBtnErase:hover,
+.favBtnList:hover {
+    color: var(--common-color-site-4);
+}
+
+
+.favTitle {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.favCategory {
+    font-size: 14px;
+}
+
+
+.favNone {
+    margin-bottom: 20px;
+}
+
+.favBtnFlex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Pulsante Dettagli (Turchese) */
+.favBtnDetails {
+    border: 1px solid var(--common-color-site-2);
+    border-radius: 5px;
+    background-color: var(--common-color-site-2);
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.favBtnDetails:hover {
+    border: 1px solid var(--common-color-site-4);
+    background-color: transparent;
+}
+
+/* Pulsante Rimuovi/Cancella */
+.favBtnErase {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 5px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.favBtnErase:hover {
+    border-color: rgb(239, 68, 68);
+    background-color: rgb(239, 68, 68);
+}
+
+/* Pulsante Torna alla Lista */
+.favBtnList {
+    border: 1px solid var(--common-color-site-4);
+    border-radius: 5px;
+    background-color: var(--common-color-site-4);
+    color: var(--common-color-1);
+    padding: 5px 15px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.favBtnList:hover {
+    background-color: transparent;
+}
+
+.favStar {
+    color: var(--common-color-site-5);
+    font-size: 20px;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+    .favAiBox {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .favAiBox {
+        width: 100%; /* Layout a colonna intera su mobile piccolo per non schiacciare il testo */
+    }
+
+    .favTitleAi {
+        font-size: 14px;
+    }
+
+    .favCategory {
+        font-size: 12px;
+    }
+
+    .favFlexBox {
+        gap: 10px;
+    }
+}
