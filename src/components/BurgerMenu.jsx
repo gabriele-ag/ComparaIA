@@ -1,24 +1,24 @@
 import { useState } from "react"
 import { NavLink } from "react-router-dom"
 
-import "./CSS/BurgerMenu.css"
+import styles from "./CSS/burgermenu.module.css"
 
-const BurgerMenu = ({links}) => {
+export default function BurgerMenu({links}) {
 
     const [openMenu, setOpenMenu] = useState(false)
 
     return (
         <>
-            <div className="burger-container">
-                <button className='btn-burger' onClick={() => setOpenMenu(!openMenu)}><i className="fa-solid fa-ellipsis-vertical"></i></button>
+            <div className={styles.burgerContainer}>
+                <button className={styles.btnBurger} onClick={() => setOpenMenu(!openMenu)}><i className="fa-solid fa-ellipsis-vertical"></i></button>
             </div>
 
-            <div className={ `burger-nav ${openMenu ? "open" : "" }`}>
+            <div className={ `${styles.burgerNav} ${openMenu ? `${styles.burgerNavOpen}` : "" }`}>
                 <ul>
                     {links.map((curLink, index) => (
                         <li key={index}>
                             <NavLink 
-                            className="burger-link" 
+                            className={styles.burgerLink}
                             to={curLink.url} 
                             onClick={() => setOpenMenu(false)}>
                                 {curLink.title}
@@ -30,5 +30,3 @@ const BurgerMenu = ({links}) => {
         </>
     )
 }
-
-export default BurgerMenu

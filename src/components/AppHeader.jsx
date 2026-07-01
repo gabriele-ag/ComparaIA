@@ -1,11 +1,10 @@
 import { NavLink, Link } from 'react-router-dom';
 
 import BurgerMenu from './BurgerMenu';
+import styles from './CSS/appheader.module.css'  
 
-// CSS
-import "./CSS/AppHeader.css"
 
-const AppHeader = () => {
+export default function AppHeader() {
 
 
     const linkNav = [
@@ -22,7 +21,7 @@ const AppHeader = () => {
         url: "/preferiti"
     },
     {
-        title: "+IA",
+        title: "AggiungiIA",
         url: "/aggiungiia"
     }]
 
@@ -30,16 +29,19 @@ const AppHeader = () => {
 
     return (
         <header>    
-                <div className="logo-container">
-                    <Link to={"/"}><h2 className="logo"><i className="fa-solid fa-brain"></i></h2></Link>
+                <div className={styles.logoContainer}>
+                    <div className={styles.logoBox}>
+                        <NavLink to={"/"}><i className={`fa-solid fa-brain ${styles.logo}`}></i></NavLink>
+                    </div>
+                    <p className={styles.logoText}>ComparaIA</p>
                 </div>
 
                 {/* Barra di navigazione */}
                 <nav>               
-                    <ul className="flex-nav-header">
+                    <ul className={styles.flexNavHeader}>
                         {linkNav.map((curLink, index) => (
                             <li key={index}>                            
-                                    <NavLink className="navlink" to={curLink.url}>{curLink.title}</NavLink>
+                                    <NavLink className={styles.navlink} to={curLink.url}>{curLink.title}</NavLink>
                             </li>
                         ))}
                     </ul>  
@@ -48,5 +50,3 @@ const AppHeader = () => {
         </header>
     );
 };
-
-export default AppHeader;

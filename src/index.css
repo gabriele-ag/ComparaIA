@@ -1,33 +1,47 @@
 /* CSS RESET */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* SITE-FONT */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+body, input, select, textarea, button {
+  font-family: 'Space Grotesk', sans-serif !important;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 body {
-    font-family: "Arimo", sans-serif;
-    font-optical-sizing: auto;
-    background-color: #F5F5F5;
+  font-family: "Arimo", sans-serif;
+  font-optical-sizing: auto;
+  background-color: var(--common-color-site-1) !important;
 }
 
 /* Utilities */
 
+:root {
+  --common-color-site-1: #020616;
+  --common-color-site-2: #4f46e5;
+  --common-color-site-3: #a5b4fc;
+  --common-color-font: #545c8e;
+}
+
 .container {
-    margin: auto;
-    padding: 0;
-    max-width: 80%;
+  margin: auto;
+  padding: 0;
+  max-width: 80%;
 }

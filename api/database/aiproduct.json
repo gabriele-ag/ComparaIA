@@ -1,0 +1,596 @@
+[
+  {
+    "title": "ChatGPT",
+    "category": "Scrittura & Contenuti",
+    "description": "Modello linguistico avanzato per contenuti e assistenza.",
+    "brand": "OpenAI",
+    "website": "https://chat.openai.com",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg",
+    "price": "Freemium",
+    "hasFreeVersion": true,
+    "apiAvailable": true,
+    "supportedLanguages": [
+      "EN",
+      "IT",
+      "FR",
+      "DE",
+      "ES"
+    ],
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android"
+    ],
+    "releaseYear": 2022,
+    "rating": 4.8,
+    "integrations": [
+      "Zapier",
+      "Slack",
+      "Notion"
+    ],
+    "privacyLevel": "High",
+    "useCases": [
+      "Copywriting",
+      "Customer Support",
+      "Coding"
+    ],
+    "id": 1,
+    "createdAt": "2025-08-25T09:57:45.547Z",
+    "updatedAt": "2025-09-01T09:12:52.350Z"
+  },
+  {
+    "title": "Midjourney",
+    "category": "Design & Presentazioni",
+    "description": "Genera immagini artistiche da prompt testuali.",
+    "brand": "Midjourney Inc.",
+    "website": "https://www.midjourney.com",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/2/24/Midjourney_Emblem.svg",
+    "price": "Da 10€/mese",
+    "hasFreeVersion": false,
+    "apiAvailable": false,
+    "supportedLanguages": [
+      "EN"
+    ],
+    "platforms": [
+      "Web"
+    ],
+    "releaseYear": 2022,
+    "rating": 4.7,
+    "integrations": [
+      "Discord"
+    ],
+    "privacyLevel": "Medium",
+    "useCases": [
+      "Design",
+      "Arte",
+      "Marketing"
+    ],
+    "id": 2,
+    "createdAt": "2025-08-25T09:58:37.292Z",
+    "updatedAt": "2025-09-06T13:44:33.501Z"
+  },
+  {
+    "title": "Jasper",
+    "category": "Scrittura & Contenuti",
+    "description": "Assistente AI per contenuti di marketing e blog.",
+    "brand": "Jasper AI",
+    "website": "https://www.jasper.ai",
+    "logoUrl": "/public/brain-solid-full.svg",
+    "price": "Da 39€/mese",
+    "hasFreeVersion": false,
+    "apiAvailable": true,
+    "supportedLanguages": [
+      "EN"
+    ],
+    "platforms": [
+      "Web"
+    ],
+    "releaseYear": 2021,
+    "rating": 4.6,
+    "integrations": [
+      "Surfer SEO",
+      "Zapier"
+    ],
+    "privacyLevel": "High",
+    "useCases": [
+      "Blogging",
+      "Ads",
+      "SEO"
+    ],
+    "id": 3,
+    "createdAt": "2025-08-25T10:01:27.613Z",
+    "updatedAt": "2025-10-07T06:51:54.795Z"
+  },
+  {
+    "title": "Synthesia",
+    "category": "Multimedia & Editing",
+    "description": "Crea video con avatar sintetici parlanti.",
+    "brand": "Synthesia Ltd.",
+    "website": "https://www.synthesia.io",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Synthesia_Logo_2024.png",
+    "price": "Da 30€/mese",
+    "hasFreeVersion": false,
+    "apiAvailable": true,
+    "supportedLanguages": [
+      "EN",
+      "FR",
+      "DE",
+      "IT"
+    ],
+    "platforms": [
+      "Web"
+    ],
+    "releaseYear": 2020,
+    "rating": 4.5,
+    "integrations": [
+      "Canva",
+      "Loom"
+    ],
+    "privacyLevel": "High",
+    "useCases": [
+      "Formazione",
+      "Presentazioni",
+      "Marketing"
+    ],
+    "id": 4,
+    "createdAt": "2025-08-25T10:03:11.678Z",
+    "updatedAt": "2025-09-06T13:56:50.110Z"
+  },
+  {
+    "title": "Notion AI",
+    "category": "Assistenti Generali",
+    "description": "Assistente AI integrato in Notion per scrittura e organizzazione.",
+    "brand": "Notion Labs",
+    "website": "https://www.notion.so",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Notion-logo.svg",
+    "price": "Incluso nel piano Plus",
+    "hasFreeVersion": true,
+    "apiAvailable": true,
+    "supportedLanguages": [
+      "EN"
+    ],
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android"
+    ],
+    "releaseYear": 2023,
+    "rating": 4.4,
+    "integrations": [
+      "Slack",
+      "Google Calendar"
+    ],
+    "privacyLevel": "Medium",
+    "useCases": [
+      "Note",
+      "Task",
+      "Scrittura"
+    ],
+    "id": 5,
+    "createdAt": "2025-08-25T10:03:21.433Z",
+    "updatedAt": "2025-09-06T13:58:40.821Z"
+  },
+  {
+    "title": "Grammarly",
+    "category": "Scrittura & Contenuti",
+    "description": "Correttore grammaticale e stilistico con AI.",
+    "brand": "Grammarly Inc.",
+    "website": "https://www.grammarly.com",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Grammarly_logo.svg",
+    "price": "Freemium",
+    "hasFreeVersion": true,
+    "apiAvailable": false,
+    "supportedLanguages": [
+      "EN"
+    ],
+    "platforms": [
+      "Web",
+      "Desktop",
+      "Mobile"
+    ],
+    "releaseYear": 2018,
+    "rating": 4.6,
+    "integrations": [
+      "Google Docs",
+      "Outlook"
+    ],
+    "privacyLevel": "High",
+    "useCases": [
+      "Scrittura",
+      "Email",
+      "Editing"
+    ],
+    "id": 6,
+    "createdAt": "2025-08-25T10:03:31.696Z",
+    "updatedAt": "2025-09-06T14:02:26.245Z"
+  },
+  {
+    "title": "Pictory",
+    "category": "Multimedia & Editing",
+    "description": "Genera video da articoli e script testuali.",
+    "brand": "Pictory AI",
+    "website": "https://pictory.ai",
+    "logoUrl": "/public/brain-solid-full.svg",
+    "price": "Da 19€/mese",
+    "hasFreeVersion": true,
+    "apiAvailable": false,
+    "supportedLanguages": [
+      "EN"
+    ],
+    "platforms": [
+      "Web"
+    ],
+    "releaseYear": 2022,
+    "rating": 4.3,
+    "integrations": [
+      "YouTube",
+      "LinkedIn"
+    ],
+    "privacyLevel": "Medium",
+    "useCases": [
+      "Content Marketing",
+      "Video",
+      "Social"
+    ],
+    "id": 8,
+    "createdAt": "2025-08-25T10:04:00.841Z",
+    "updatedAt": "2025-10-07T06:50:41.999Z"
+  },
+  {
+    "title": "Quillbot",
+    "category": "Scrittura & Contenuti",
+    "description": "Riformula e semplifica testi con AI.",
+    "brand": "Quillbot",
+    "website": "https://quillbot.com",
+    "logoUrl": "https://quillbot.com/favicon.ico",
+    "price": "Freemium",
+    "hasFreeVersion": true,
+    "apiAvailable": false,
+    "supportedLanguages": [
+      "EN"
+    ],
+    "platforms": [
+      "Web"
+    ],
+    "releaseYear": 2019,
+    "rating": 4.4,
+    "integrations": [
+      "Google Docs",
+      "Word"
+    ],
+    "privacyLevel": "Medium",
+    "useCases": [
+      "Scrittura",
+      "Studio",
+      "SEO"
+    ],
+    "id": 9,
+    "createdAt": "2025-08-25T10:04:11.040Z",
+    "updatedAt": "2025-09-01T09:16:06.843Z"
+  },
+  {
+    "title": "Beautiful.ai",
+    "category": "Design & Presentazioni",
+    "description": "Crea presentazioni con design automatico.",
+    "brand": "Beautiful.ai",
+    "website": "https://www.beautiful.ai",
+    "logoUrl": "https://www.beautiful.ai/favicon.ico",
+    "price": "Da 15€/mese",
+    "hasFreeVersion": false,
+    "apiAvailable": false,
+    "supportedLanguages": [
+      "EN"
+    ],
+    "platforms": [
+      "Web"
+    ],
+    "releaseYear": 2020,
+    "rating": 4.3,
+    "integrations": [
+      "Slack",
+      "Dropbox"
+    ],
+    "privacyLevel": "Medium",
+    "useCases": [
+      "Presentazioni",
+      "Design",
+      "Business"
+    ],
+    "id": 11,
+    "createdAt": "2025-08-25T10:04:36.155Z",
+    "updatedAt": "2025-09-01T09:11:22.026Z"
+  },
+  {
+    "title": "Perplexity",
+    "category": "Ricerca AI",
+    "description": "Motore di ricerca conversazionale con fonti citate.",
+    "brand": "Perplexity AI",
+    "website": "https://www.perplexity.ai",
+    "logoUrl": "https://www.perplexity.ai/favicon.ico",
+    "price": "Freemium",
+    "hasFreeVersion": true,
+    "apiAvailable": true,
+    "supportedLanguages": [
+      "EN"
+    ],
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android"
+    ],
+    "releaseYear": 2023,
+    "rating": 4.7,
+    "integrations": [
+      "Slack",
+      "Zapier"
+    ],
+    "privacyLevel": "High",
+    "useCases": [
+      "Ricerca",
+      "Studio",
+      "Verifica Fonti"
+    ],
+    "id": 12,
+    "createdAt": "2025-08-25T10:08:31.134Z",
+    "updatedAt": "2025-08-25T10:08:31.134Z"
+  },
+  {
+    "title": "Canva Magic Studio",
+    "category": "Design & Presentazioni",
+    "description": "Genera grafiche, presentazioni e video con prompt testuali.",
+    "brand": "Canva",
+    "website": "https://www.canva.com",
+    "logoUrl": "https://www.canva.com/favicon.ico",
+    "price": "Freemium",
+    "hasFreeVersion": true,
+    "apiAvailable": false,
+    "supportedLanguages": [
+      "EN",
+      "IT",
+      "FR",
+      "DE"
+    ],
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android"
+    ],
+    "releaseYear": 2024,
+    "rating": 4.7,
+    "integrations": [
+      "Google Drive",
+      "Slack"
+    ],
+    "privacyLevel": "Medium",
+    "useCases": [
+      "Social media",
+      "Branding",
+      "Presentazioni"
+    ],
+    "id": 13,
+    "createdAt": "2025-08-25T10:10:38.022Z",
+    "updatedAt": "2025-09-01T09:11:42.216Z"
+  },
+  {
+    "title": "SurferSEO",
+    "category": "Marketing & SEO",
+    "description": "Ottimizza contenuti per SEO con analisi semantica.",
+    "brand": "Surfer",
+    "website": "https://surferseo.com",
+    "logoUrl": "/public/brain-solid-full.svg",
+    "price": "Da 29€/mese",
+    "hasFreeVersion": false,
+    "apiAvailable": true,
+    "supportedLanguages": [
+      "EN"
+    ],
+    "platforms": [
+      "Web"
+    ],
+    "releaseYear": 2020,
+    "rating": 4.5,
+    "integrations": [
+      "Jasper",
+      "WordPress"
+    ],
+    "privacyLevel": "Medium",
+    "useCases": [
+      "Blogging",
+      "SEO",
+      "Content strategy"
+    ],
+    "id": 14,
+    "createdAt": "2025-08-25T10:11:29.537Z",
+    "updatedAt": "2025-10-07T06:52:14.347Z"
+  },
+  {
+    "title": "Lattice",
+    "category": "Performance Management",
+    "description": "Analizza feedback e obiettivi per migliorare la cultura aziendale.",
+    "brand": "Lattice",
+    "website": "https://www.lattice.com",
+    "logoUrl": "/public/brain-solid-full.svg",
+    "price": "Da 11€/utente/mese",
+    "hasFreeVersion": false,
+    "apiAvailable": true,
+    "supportedLanguages": [
+      "EN"
+    ],
+    "platforms": [
+      "Web"
+    ],
+    "releaseYear": 2021,
+    "rating": 4.3,
+    "integrations": [
+      "Slack",
+      "Google Workspace"
+    ],
+    "privacyLevel": "Medium",
+    "useCases": [
+      "HR",
+      "Performance review",
+      "Engagement"
+    ],
+    "id": 15,
+    "createdAt": "2025-08-25T10:12:12.875Z",
+    "updatedAt": "2025-10-07T06:49:22.035Z"
+  },
+  {
+    "title": "Runway",
+    "category": "Multimedia & Editing",
+    "description": "Strumenti AI per editing video e generazione da testo.",
+    "brand": "Runway ML",
+    "website": "https://runwayml.com",
+    "logoUrl": "/public/brain-solid-full.svg",
+    "price": "Freemium",
+    "hasFreeVersion": true,
+    "apiAvailable": true,
+    "supportedLanguages": [
+      "EN"
+    ],
+    "platforms": [
+      "Web"
+    ],
+    "releaseYear": 2020,
+    "rating": 4.5,
+    "integrations": [
+      "Premiere Pro",
+      "Figma"
+    ],
+    "privacyLevel": "High",
+    "useCases": [
+      "Video Editing",
+      "Generazione Video",
+      "Animazione"
+    ],
+    "id": 16,
+    "createdAt": "2025-09-01T08:46:42.647Z",
+    "updatedAt": "2025-10-07T06:51:24.732Z"
+  },
+  {
+    "title": "Copy.ai",
+    "category": "Scrittura & Contenuti",
+    "description": "Generatore di testi pubblicitari e contenuti social.",
+    "brand": "Copy.ai",
+    "website": "https://www.copy.ai",
+    "logoUrl": "/public/brain-solid-full.svg",
+    "price": "Freemium",
+    "hasFreeVersion": true,
+    "apiAvailable": true,
+    "supportedLanguages": [
+      "EN",
+      "IT",
+      "FR",
+      "ES"
+    ],
+    "platforms": [
+      "Web"
+    ],
+    "releaseYear": 2020,
+    "rating": 4.4,
+    "integrations": [
+      "Zapier",
+      "HubSpot"
+    ],
+    "privacyLevel": "Medium",
+    "useCases": [
+      "Marketing",
+      "Social Media",
+      "Email"
+    ],
+    "id": 17,
+    "createdAt": "2025-09-01T08:47:22.534Z",
+    "updatedAt": "2025-10-07T06:47:39.217Z"
+  },
+  {
+    "title": "Microsoft Copilot",
+    "category": "Assistenti Generali",
+    "description": "Assistente AI integrato in Microsoft 365 per scrittura, analisi e automazione.",
+    "brand": "Microsoft",
+    "website": "https://www.microsoft.com/en-us/microsoft-copilot/copilot-101/",
+    "logoUrl": "/public/brain-solid-full.svg",
+    "price": "Subscription",
+    "hasFreeVersion": false,
+    "apiAvailable": true,
+    "supportedLanguages": [
+      "EN",
+      "IT",
+      "FR",
+      "DE",
+      "ES"
+    ],
+    "platforms": [
+      "Windows",
+      "Web",
+      "Edge",
+      "Outlook",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "releaseYear": 2023,
+    "rating": 4.7,
+    "integrations": [
+      "Teams",
+      "SharePoint",
+      "GitHub",
+      "Planner"
+    ],
+    "privacyLevel": "High",
+    "useCases": [
+      "Documentazione",
+      "Analisi Dati",
+      "Email",
+      "Presentazioni"
+    ],
+    "id": 18,
+    "createdAt": "2025-09-01T08:49:36.173Z",
+    "updatedAt": "2025-10-07T06:49:50.370Z"
+  },
+  {
+    "title": "Google Gemini",
+    "category": "Assistenti Generali",
+    "description": "AI multimodale per testo, immagini, audio e video integrata in Google Workspace.",
+    "brand": "Google",
+    "website": "https://gemini.google/about/",
+    "logoUrl": "/public/brain-solid-full.svg",
+    "price": "Freemium",
+    "hasFreeVersion": true,
+    "apiAvailable": true,
+    "supportedLanguages": [
+      "EN",
+      "IT",
+      "FR",
+      "DE",
+      "ES",
+      "JA"
+    ],
+    "platforms": [
+      "Web",
+      "Android",
+      "Chrome",
+      "Docs",
+      "Gmail",
+      "Search"
+    ],
+    "releaseYear": 2023,
+    "rating": 4.8,
+    "integrations": [
+      "Google Calendar",
+      "YouTube",
+      "Google Maps",
+      "Drive"
+    ],
+    "privacyLevel": "High",
+    "useCases": [
+      "Scrittura",
+      "Ricerca",
+      "Video",
+      "Presentazioni",
+      "Codice"
+    ],
+    "id": 19,
+    "createdAt": "2025-09-01T08:50:05.339Z",
+    "updatedAt": "2025-10-07T06:48:15.962Z"
+  }
+]
