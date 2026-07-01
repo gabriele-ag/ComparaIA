@@ -36,13 +36,15 @@ const ModalConfronto = ({isOpen, onClose, items}) => {
         
         <div className="modal-overlay">
             <div className="modal-content">
-                <button className="modal-btn-close" onClick={onClose}><i className="fa-solid fa-xmark"></i></button>
-                <h3 className="modal-title">Compara IA</h3>
+                <div className="modal-box-title">
+                    <button className="modal-btn-close" onClick={onClose}><i className="fa-solid fa-xmark"></i></button>
+                </div>
+                <h3 className="modal-title">Risultati Comparazione</h3>
                 <div className="modal-ai modal-table-wrapper">                   
                             <table className="modal-compare-table">
                             <thead>
                                 <tr>
-                                <th>Caratteristica</th>
+                                <th></th>
                                 {maxItemsComparable.map((curElem) => (
                                     <th key={curElem.id}>{curElem.title}</th>
                                 ))}

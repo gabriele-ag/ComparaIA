@@ -83,13 +83,18 @@
   border: 1px solid var(--common-color-4);
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  background-color: var(--common-color-1);
+  background-color: var(--common-color-site-2);
   padding: 10px;
   color: var(--common-color-4);
   cursor: pointer;
   transform: translate(100%);
   animation: slideInRight 0.5s ease-out forwards;
   z-index: 9999;
+}
+
+.btnConfronta:hover {
+  background-color: white;
+  color: var(--common-color-site-2)
 }
 
 .modalOverlayDelete {
