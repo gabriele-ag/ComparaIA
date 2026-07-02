@@ -1,5 +1,6 @@
 .cardAi {
-    color: white;
+    height: 100%;
+    color: var(--common-color-site-4);
     border: 1px solid rgb(30 41 59 / 0.8);
     border-radius: 15px;
     padding: 20px;
@@ -26,7 +27,7 @@
     font-size: 13px;
     font-weight: normal;
     margin-bottom: 25px;
-    color: rgb(129, 140, 248);
+    color: var(--common-color-site-3);
 }
 
 .cardBtnBox {
@@ -60,19 +61,24 @@
 }
 
 .btnDetails {
-    background-color: rgb(48, 55, 73)
+    background-color: var(--common-color-site-7);
+    color: var(--common-color-site-1);
+    border: 1px solid var(--common-color-site-7);;
 }
 
 .btnDetails:hover {
-    background-color: rgb(66, 78, 109)
+    background-color: transparent;
 }
 
 .btnCompare {
-    background-color: rgb(129, 140, 248, 0.2);
+    background-color: var(--common-color-site-2);
+    color: var(--common-color-site-4);
+    border: 1px solid var(--common-color-site-2);
 }
 
 .btnCompare:hover {
-    background-color: rgb(129, 140, 248);
+    color: var(--common-color-site-2);
+    background-color: transparent;
     cursor: pointer;
 }
 
@@ -96,11 +102,11 @@
     color: rgb(255, 0, 85);
 }
 .btnEdit:hover {
-    color: #00BFA6;
+    color: var(--common-color-site-7);
 }
 
 .btnFav:hover {
-    color: #F1D302;
+    color: var(--common-color-site-5);
 }
 
 .cardBtnBox2 {
@@ -110,6 +116,8 @@
 }
 
 @media screen and (max-width: 768px) {
+
+    
 
     .cardAi {
         margin-bottom: 20px;

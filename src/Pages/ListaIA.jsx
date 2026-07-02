@@ -146,12 +146,12 @@ const ListaIA = () => {
                     <div className="container">
 
                         <div className={styles.boxTitle}>
-                            <h2 className={styles.titleSection}>Esplora le migliori IA</h2>
+                            <h2 className={styles.titleSection}>_EsploraLeMiglioriIA</h2>
                             <p className={styles.subtitleSection}>Trova, filtra e seleziona le IA per confrontarle in tempo reale.</p>
                         </div>
 
                         {/* Input per i filtri */}
-                        <div>
+                        
                             <form className={styles.boxInput} onSubmit={handleForm}>
                                 <div>
                                     <input 
@@ -178,13 +178,13 @@ const ListaIA = () => {
                                 </div>
 
                                 {/* Pulsante per ordinamento */}
-                                <div>
+                                <div className={styles.sortOrderBox}>
                                     <span className={styles.sortedBy}>Ordina da:</span> 
                                     <button 
                                         className={styles.btnSort} 
                                         onClick={() => setSorted(!sorted)}
                                     >
-                                        {sorted ? <i className="fa-solid fa-arrow-up-a-z"></i> : <i className="fa-solid fa-arrow-down-z-a"></i>}
+                                        {sorted ? <i className={`fa-solid fa-arrow-up-a-z ${styles.sortOrderButton}`}></i> : <i className={`fa-solid fa-arrow-down-z-a ${styles.sortOrderButton}`}></i>}
                                     </button>
                                 </div>
                             </form>
@@ -212,7 +212,7 @@ const ListaIA = () => {
                                 ))
                             )}
                         </ul>
-                        </div>
+                        
 
 
                         {/* Modale Eliminazione */}

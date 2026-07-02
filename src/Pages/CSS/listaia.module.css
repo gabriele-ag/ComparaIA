@@ -1,11 +1,3 @@
-:root {
-  --common-color-1: #181817;
-  --common-color-2: #f1d302;
-  --common-color-3: #00bfa6;
-  --common-color-4: #ffffff;
-  --common-color-6: #fd5f37;
-}
-
 .sectionListaIA {
   padding: 100px 0px;
 }
@@ -26,11 +18,20 @@
   color: var(--common-color-font);
 }
 
-.listContainer {
+/* .listContainer {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
   gap: 20px;
+  width: 100%;
+} */
+
+.listContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 100%;
+  align-items: stretch; 
 }
 
 .boxInput {
@@ -54,20 +55,28 @@
 
 .searchInput:focus {
   outline: none;
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  border: 1px solid rgb(255, 255, 255);
+  background-color: var(--common-color-site-4);
+  color: var(--common-color-site-1);
+  border: 1px solid var(--common-color-site-4);
+}
+
+.sortOrderBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
 }
 
 .sortedBy {
-  color: rgb(255, 255, 255);
+  color: var(--common-color-site-4);
   font-size: 13px;
 }
 
 .btnSort {
-  color: rgb(255, 255, 255);
-  background-color: transparent;
-  border: transparent;
+  color: var(--common-color-site-4);
+  background-color: var(--common-color-site-2);
+  border: 1px solid var(--common-color-site-2);
+  border-radius: 10px;
   font-size: 25px;
   cursor: pointer;
 }
@@ -126,7 +135,7 @@
   background-color: var(--common-color-6);
   border-radius: 10px;
   border: 1px solid var(--common-color-6);
-  color: white;
+  color: var(--common-color-site-4);
   padding: 10px 10px;
   transition: color 0.3s ease-in-out;
   cursor: pointer;
@@ -171,11 +180,24 @@
   font-size: 20px;
 }
 
+@media screen and (max-width: 1200px) {
+  .listContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 992px) {
+
+  .listContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 /* 💻 TABLET */
 @media screen and (max-width: 768px) {
 
   .listContainer {
-    display: block;
+    grid-template-columns: 1fr;
   }
 
   .searchInput {
@@ -185,6 +207,11 @@
 
 /* 📱 MOBILE */
 @media screen and (max-width: 375px) {
+
+  .sortOrderBox {
+    justify-content: center;
+    flex-direction: column;
+  }
 
     .titleSection {
         font-size: 25px;

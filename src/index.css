@@ -15,6 +15,7 @@
   --common-color-site-4: #FFFFFF;
   --common-color-site-5: #F1D302;
   --common-color-site-6: #fd5f37;
+  --common-color-site-7: #35FF69;
   --common-color-font: #545c8e;
   --common-color-font-2: #181817;
 }
@@ -48,4 +49,8 @@ body {
   margin: auto;
   padding: 0;
   max-width: 80%;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
 }

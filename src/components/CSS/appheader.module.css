@@ -1,12 +1,5 @@
-:root {
-    --common-color-1: #181817;
-    --common-color-2: #F1D302;
-    --common-color-3: #00BFA6;
-    --common-color-4: #FFFFFF;   
-}
-
 header {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     background-color: var(--common-color-site-1);
@@ -28,7 +21,7 @@ header {
 .logo,
 .logoText,
 .navLink {
-    color: rgb(255, 255, 255);
+    color: var(--common-color-site-4);
     font-weight: bold;
 }
 
@@ -71,8 +64,8 @@ header {
 }
 
 .navlink:hover {
-    background-color: rgb(255, 255, 255,0.3);
-    color: rgb(255, 255, 255);
+    background-color: var(--common-color-site-7);
+    color: var(--common-color-site-1);
 }
 
 

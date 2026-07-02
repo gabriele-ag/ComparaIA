@@ -1,10 +1,3 @@
-:root {
-    --common-color-1: #181817;
-    --common-color-2: #F1D302;
-    --common-color-3: #00BFA6;
-    --common-color-4: #FFFFFF;
-}
-
 .homeSection {
     background-color: var(--common-color-site-1);
   
@@ -18,7 +11,7 @@
 }
 
 .homeBox {
-    color: #FFFFFF;
+    color: var(--common-color-site-4);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,7 +19,7 @@
     height: 100vh;
 }
 
-.videoBg {
+/* .videoBg {
     position: absolute;
     top: 0;
     left: 0;
@@ -35,7 +28,7 @@
     object-fit: cover;
     z-index: -1;
     opacity: 0.2;
-}
+} */
 
 .homeFlex {
     display: flex;
@@ -64,9 +57,14 @@
     color: var(--common-color-font);
 }
 
+.descriptionBox {
+    width: 70%;
+}
+
 .homeBtn {
     background-color: var(--common-color-site-2);
-    color: aliceblue;
+    border: 1px solid var(--common-color-site-2);
+    color: var(--common-color-site-4);
     border-radius: 10px;
     padding: 20px;
     font-weight: bold;
@@ -76,9 +74,9 @@
 }
 
 .homeBtn:hover {
-    background-color: transparent;
-    border: 1px solid var(--common-color-1);
-    color: var(--common-color-1);
+    background-color: var(--common-color-site-4);
+    border: 1px solid var(--common-color-site-4);
+    color: var(--common-color-site-2);
 }
 
 .homeArrow {
@@ -89,4 +87,20 @@
 .btnFlex {
     display: flex;
     justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    .homeTitle {
+        font-size: 70px;
+    }
+
+    .descriptionBox {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .homeTitle {
+        font-size: 50px;
+    }
 }

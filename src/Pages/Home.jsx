@@ -4,7 +4,7 @@ import styles from "./CSS/home.module.css";
 const Home = () => {
     return (
         <main>     
-            <video 
+            {/* <video 
                 autoPlay 
                 muted 
                 loop 
@@ -12,16 +12,16 @@ const Home = () => {
                 className={styles.videoBg}
             >
                 <source src="/Home-video.mp4" type="video/mp4" />
-            </video>
+            </video> */}
 
             <section className={styles.homeSection}>
                 <div className={styles.homeFlex}>
                     
                     <div className={`container ${styles.homeBox}`}>
-                        <h1 className={styles.homeTitle}>Compara IA</h1>
+                        <h1 className={styles.homeTitle}>_comparaIA</h1>
                         <h3 className={styles.homeSubtitle}>SEMPLICE. VELOCE. AFFIDABILE</h3>
                         
-                        <div className={styles.descriptionBg}>
+                        <div className={styles.descriptionBox}>
                             <p className={styles.descriptionHome}>
                                 Sfoglia il nostro catalogo costantemente aggiornato sulle intelligenze artificiali più utilizzate. 
                                 Che si tratti di scrittura, design o editing video, troverai lo strumento perfetto per te! 

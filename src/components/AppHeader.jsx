@@ -33,7 +33,8 @@ export default function AppHeader() {
                     <div className={styles.logoBox}>
                         <NavLink to={"/"}><i className={`fa-solid fa-brain ${styles.logo}`}></i></NavLink>
                     </div>
-                    <p className={styles.logoText}>ComparaIA</p>
+                    <p className={styles.logoText}>_comparaIA</p>
+                    <span className={styles.terminalCursor}></span>
                 </div>
 
                 {/* Barra di navigazione */}

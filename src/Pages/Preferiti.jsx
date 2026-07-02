@@ -14,7 +14,7 @@ const Preferiti = () => {
             <div className="container">
                 <div className={styles.favTitleBox}>
                     <h2 className={styles.favTitle}>
-                        I tuoi preferiti <i className={`fa-solid fa-star ${styles.favStar}`}></i>
+                        _iTuoiPreferiti<i className={`fa-solid fa-star ${styles.favStar}`}></i>
                     </h2>
                 </div>
                 
