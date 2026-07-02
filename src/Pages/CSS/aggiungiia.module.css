@@ -33,6 +33,7 @@
     color: var(--common-color-site-4);
     font-size: 15px;
     margin-bottom: 5px;
+    transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out, border-color 0.25s ease-in-out;
 }
 
 .addAiFormFlex label:focus,
@@ -41,7 +42,7 @@
 .addAiFormFlex select:focus,
 .addAiFormFlex option:focus {
     outline: none;
-    border: 1px solid var(--common-color-site-4);
+    border: 1px solid var(--common-color-site-3);
     color: var(--common-color-font-2);
     background-color: var(--common-color-site-4);
 }
@@ -82,12 +83,13 @@
     padding: 10px;
     font-size: 15px;
     font-weight: bold;
-    transition: color 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
     margin-right: 15px;
     cursor: pointer;
 }
 
 .addAiBtnConfirm:hover {
+    color: var(--common-color-site-2);
     border: 1px solid var(--common-color-site-2);   
     background-color: transparent;
 }
