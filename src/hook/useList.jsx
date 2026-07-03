@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from "react"
 
-const useList = () => {
+export default function useList () {
 
     const [listAI, setListAI] = useState([])
     const [favorites, setFavorites] = useState(() => {
@@ -51,8 +51,6 @@ const useList = () => {
                     throw new Error(`Errore nella risposta: ${response.status}`)
                 }
                 
-                // Verifico se i dati arrivano correttamente, in console
-                console.log(data)
                 
                 return data.aiproduct
             } catch(error) {
@@ -148,7 +146,6 @@ const useList = () => {
         // Funzioni per l'aggiunzione e la rimozione dei preferiti
 
         const addToFavorites = (curElem) => {
-            console.log("Aggiungo ai preferiti:", curElem);
             setFavorites((prev) => {
             const alreadyExists = prev.some((item) => item.id === curElem.id);
             return alreadyExists ? prev : [...prev, curElem];
@@ -171,5 +168,3 @@ const useList = () => {
             deleteAI
         };
 }
-
-export default useList

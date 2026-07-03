@@ -1,0 +1,231 @@
+.sectionListaIA {
+  padding: 100px 0px;
+}
+
+.boxTitle {
+  border-bottom: 1px solid rgb(30, 41, 59, 0.8);
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+}
+
+.titleSection {
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 15px;
+}
+
+.subtitleSection {
+  color: var(--common-color-font);
+}
+
+/* .listContainer {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+} */
+
+.listContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 100%;
+  align-items: stretch; 
+}
+
+.boxInput {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.searchInput,
+.categoryInput {
+  color: var(--common-color-site-4);
+  margin-right: 20px;
+  background-color: rgb(59, 68, 92);
+  border: 1px solid rgb(30 41 59 / 0.8);
+  border-radius: 10px;
+  padding: 10px 10px;
+  font-size: 15px;
+  transition: border 0.2s ease-in-out;
+}
+
+.searchInput:focus {
+  outline: none;
+  background-color: var(--common-color-site-4);
+  color: var(--common-color-site-1);
+  border: 1px solid var(--common-color-site-4);
+}
+
+.sortOrderBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.sortedBy {
+  color: var(--common-color-site-4);
+  font-size: 13px;
+}
+
+.btnSort {
+  color: var(--common-color-site-4);
+  background-color: var(--common-color-site-2);
+  border: 1px solid var(--common-color-site-2);
+  border-radius: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.btnConfronta {
+  position: fixed;
+  top: 120px;
+  right: 0px;
+  font-size: 20px;
+  font-weight: bold;
+  border: 1px solid var(--common-color-4);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: var(--common-color-site-2);
+  padding: 10px;
+  color: var(--common-color-4);
+  cursor: pointer;
+  transform: translate(100%);
+  animation: slideInRight 0.4s ease-out forwards;
+  z-index: 9999;
+}
+
+.btnConfronta:hover {
+  background-color: white;
+  color: var(--common-color-site-2);
+}
+
+.modalOverlayDelete {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(24, 24, 23, 0.5);
+  backdrop-filter: blur(25px);
+     -webkit-backdrop-filter: blur(25px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modalContentDelete {
+  background: white;
+  padding: 40px 35px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.modalBoxBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.btnConfirmDelete {
+  background-color: var(--common-color-site-6);
+  border-radius: 10px;
+  border: 1px solid var(--common-color-site-6);
+  color: var(--common-color-site-4);
+  padding: 10px 10px;
+  transition: color 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.btnConfirmDelete:hover {
+  background-color: var(--common-color-4);
+  color: var(--common-color-6);
+}
+
+.modalP {
+  margin-bottom: 15px;
+}
+
+.btnCancelDelete {
+  background-color: var(--common-color-1);
+  border-radius: 10px;
+  border: 1px solid var(--common-color-1);
+  padding: 10px 15px;
+  color: var(--common-color-4);
+  transition: color 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.btnCancelDelete:hover {
+  background-color: var(--common-color-4);
+  color: var(--common-color-1);
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.noResultSearch {
+  color: var(--common-color-site-4);
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .listContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 992px) {
+
+  .listContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 💻 TABLET */
+@media screen and (max-width: 768px) {
+
+  .listContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .searchInput {
+    margin-bottom: 10px;
+  }
+}
+
+/* 📱 MOBILE */
+@media screen and (max-width: 375px) {
+
+  .sortOrderBox {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+    .titleSection {
+        font-size: 25px;
+    }
+
+  .searchInput {
+    margin-right: 0;
+  }
+
+  .searchInput,
+  .categoryInput {
+    width: 90%;
+  }
+}

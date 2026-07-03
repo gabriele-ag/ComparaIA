@@ -1,33 +1,42 @@
-import { Link } from "react-router-dom"
+import { Link } from 'react-router'; 
+import styles from "./CSS/home.module.css"; 
 
-import "./CSS/Home.css"
-
-
-const Home = () => {
+export default function Home() {
     return (
         <main>     
-
-            <video autoPlay muted loop playsInline className="video-bg">
+            {/* <video 
+                autoPlay 
+                muted 
+                loop 
+                playsInline 
+                className={styles.videoBg}
+            >
                 <source src="/Home-video.mp4" type="video/mp4" />
-            </video>
+            </video> */}
 
-            <section className="home-section">
-                <div className="home-flex">
-                    <div className="container home-box">
-                        <h1 className="home-title">Confronta IA</h1>
-                        <h3 className="home-subtitle">Semplice. Veloce. Affidabile</h3>
-                        <p className="description-home">Sfoglia il nostro catalogo, sempre aggiornato, sulle intelligenze artificiali più usate. <br /> Che si tratti di semplice ricerca o di editing video, troverai ciò che stai cercando!</p>
-                        <div className="btn-flex">
-                            <Link to={`/listaia`} className="home-btn">Sfoglia il catalogo!</Link>
+            <section className={styles.homeSection}>
+                <div className={styles.homeFlex}>
+                    
+                    <div className={`container ${styles.homeBox}`}>
+                        <h1 className={styles.homeTitle}>_comparaIA</h1>
+                        <h3 className={styles.homeSubtitle}>SEMPLICE. VELOCE. AFFIDABILE</h3>
+                        
+                        <div className={styles.descriptionBox}>
+                            <p className={styles.descriptionHome}>
+                                Sfoglia il nostro catalogo costantemente aggiornato sulle intelligenze artificiali più utilizzate. 
+                                Che si tratti di scrittura, design o editing video, troverai lo strumento perfetto per te! 
+                            </p>
                         </div>
-                        <div className="home-arrow">
-                            <i className="fa-solid fa-arrow-up arrow-animation"></i>
+                        
+                        <div className={styles.btnFlex}>
+                            <Link to="/listaia" className={styles.homeBtn}>
+                                Sfoglia il catalogo!
+                            </Link>
                         </div>
                     </div>
+
                 </div>
             </section>  
         </main>       
-    )
-}
-
-export default Home
+    );
+};

@@ -1,0 +1,107 @@
+:root {
+    --common-color-1: #181817;
+    --common-color-2: #F1D302;
+    --common-color-3: #00BFA6;
+    --common-color-4: #FFFFFF;
+    --common-color-5: #52489C;
+    --common-color-6: #fd5f37;
+}
+
+.sectionAddAi {
+    padding: 120px 0px;
+}
+
+.addAiTitle {
+    color: var(--common-color-site-4);
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.addAiFormFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 20px;
+}
+
+.addAiFormFlex label,
+.addAiFormFlex textarea,
+.addAiFormFlex input,
+.addAiFormFlex select,
+.addAiFormFlex option {
+    color: var(--common-color-site-4);
+    font-size: 15px;
+    margin-bottom: 5px;
+    transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out, border-color 0.25s ease-in-out;
+}
+
+.addAiFormFlex label:focus,
+.addAiFormFlex textarea:focus,
+.addAiFormFlex input:focus,
+.addAiFormFlex select:focus,
+.addAiFormFlex option:focus {
+    outline: none;
+    border: 1px solid var(--common-color-site-3);
+    color: var(--common-color-font-2);
+    background-color: var(--common-color-site-4);
+}
+
+.inputBox,
+.checkboxBox {
+    width: 100%;
+    display: flex;
+}
+
+.inputBox {
+    flex-direction: column;
+}
+
+.checkboxBox {
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.inputBox input {
+    width: 100%;
+}
+
+.addAiInput {
+    background-color: rgb(59, 68, 92);
+    border: 1px solid rgb(30 41 59 / 0.8);
+    border-radius: 10px;
+    padding: 10px 10px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.addAiBtnConfirm {
+    border: 1px solid var(--common-color-site-2);
+    border-radius: 5px;
+    background-color: var(--common-color-site-2);
+    color: var(--common-color-site-4);
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.addAiBtnConfirm:hover {
+    color: var(--common-color-site-2);
+    border: 1px solid var(--common-color-site-2);   
+    background-color: transparent;
+}
+
+.checkbox {
+    height: 20px;
+    align-self: self-start;
+    margin-bottom: 20px;
+}
+
+.errorMsg {
+    color: rgb(253, 95, 55);
+    font-size: 15px;
+    margin-bottom: 10px;
+}

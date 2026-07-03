@@ -1,0 +1,82 @@
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: var(--common-color-site-1);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0px 100px;
+    border-bottom: 1px solid rgb(30, 41, 59, 0.8);
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo,
+.logoText,
+.navLink {
+    color: var(--common-color-site-4);
+    font-weight: bold;
+}
+
+.logo {
+    font-size: 20px;
+}
+
+.logoBox {
+    background-color: var(--common-color-site-2);
+    border-radius: 10px;
+    padding: 8px;
+}
+
+
+.logo {
+    text-shadow: 
+    0 0 7px rgba(255, 255, 255, 0.8),
+    0 0 21px rgba(255, 255, 255, 0.4);
+
+    font-size: 20px;
+}
+
+
+
+.flexNavHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.navlink {
+    color: rgb(255, 255, 255, 0.6);
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    transition: color 0.3s ease-in;
+}
+
+.navlink:hover {
+    background-color: var(--common-color-site-7);
+    color: var(--common-color-site-1);
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .flexNavHeader {
+        display: none;
+    }
+
+    header {
+        padding: 0 50px;
+    }
+   
+}

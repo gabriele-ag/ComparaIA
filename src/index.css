@@ -1,33 +1,56 @@
+/* SITE-FONT */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
 /* CSS RESET */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --common-color-site-1: #020616;
+  --common-color-site-2: #4f46e5;
+  --common-color-site-3: #a5b4fc;
+  --common-color-site-4: #FFFFFF;
+  --common-color-site-5: #F1D302;
+  --common-color-site-6: #fd5f37;
+  --common-color-site-7: #35FF69;
+  --common-color-font: #545c8e;
+  --common-color-font-2: #181817;
+}
+
+body, input, select, textarea, button {
+  font-family: 'Space Grotesk', sans-serif !important;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 body {
-    font-family: "Arimo", sans-serif;
-    font-optical-sizing: auto;
-    background-color: #F5F5F5;
+  font-family: "Arimo", sans-serif;
+  font-optical-sizing: auto;
+  background-color: var(--common-color-site-1) !important;
 }
 
 /* Utilities */
 
 .container {
-    margin: auto;
-    padding: 0;
-    max-width: 80%;
+  margin: auto;
+  padding: 0;
+  max-width: 80%;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
 }

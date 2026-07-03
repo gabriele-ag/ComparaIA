@@ -1,52 +1,47 @@
-:root {
-    --common-color-1: #181817;
-    --common-color-2: #F1D302;
-    --common-color-3: #00BFA6;
-    --common-color-4: #FFFFFF;
-}
-
-.burger-container {
+.burgerContainer {
     display: none;
     position: relative;
 }
 
-.btn-burger {
+.btnBurger {
     background-color: transparent;
     border: none;
     font-size: 30px;
     cursor: pointer;
-    color: var(--common-color-1);
+    color: var(--common-color-site-4);
     display: none;
 }
 
-.burger-nav {
+.burgerNav {
     position: absolute;
+    border-bottom: 1px solid rgb(30, 41, 59, 0.8);
     top: 70px;
     right: 0;
-    background-color: var(--common-color-1);
+    background-color: var(--common-color-site-1);
+    backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
     width: 100%;
-    transform: translateY(-100%);
+    transform: translateY(-150%);
     transition: transform 0.5s ease-in-out;
-    opacity: 0;
     pointer-events: none;
     z-index: 9999;
     display: none;
 }
 
-.burger-nav.open {
+.burgerNavOpen {
     transform: translateY(0);
     opacity: 1;
     pointer-events: auto;
 }
 
-.burger-nav ul {
+.burgerNav ul {
     padding: 20px;
     margin: 0;
 }
 
-.burger-link {
+.burgerLink {
     display: block;
-    color: var(--common-color-4);
+    color: var(--common-color-site-4);
     font-weight: bold;
     font-size: 15px;
     padding: 10px 0;
@@ -54,15 +49,15 @@
 }
 
 @media screen and (max-width: 768px) {
-    .burger-container {
+    .burgerContainer {
         display: block;
     }
 
-    .btn-burger {
+    .btnBurger {
         display: block;
     }
 
-    .burger-nav {
+    .burgerNav {
         display: block;
     }
 }

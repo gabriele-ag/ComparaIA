@@ -1,10 +1,6 @@
-import "./CSS/AppFooter.css"
-
-const AppFooter = () => {
+export default function AppFooter() {
     return (
         <footer>
         </footer>
     )
 }
-
-export default AppFooter

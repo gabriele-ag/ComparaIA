@@ -3,9 +3,9 @@ import { useState, useContext, useEffect } from "react"
 
 import { useParams, Link, useNavigate } from "react-router-dom"
 
-import "./CSS/Dettagli.css"
+import styles from "./CSS/dettagli.module.css"
 
-const DettagliIA = () => {
+export default function DettagliIA () {
 
     const { id } = useParams()
     const navigate = useNavigate()
@@ -47,79 +47,106 @@ const DettagliIA = () => {
     return (
         <main>
             {singleAI === undefined ? (
-                <p className="loading">Caricamento...</p>
+                <p className={styles.loading}>Caricamento...</p>
             ) : singleAI === null ? (
                 <>
-                    <div className="container no-ai-box">
-                        <h3 className="no-ai-title">L'intelligenza artificiale che stai cercando non esiste ⚠️</h3>
-                        <Link className="no-ai-btn" onClick={() => navigate(-1)}>Torna indietro</Link>
+                    <div className={`container ${styles.noAiBox}`}>
+                        <h2 className={styles.noAiTitle}>Ops! ⚠️</h2>
+                        <p className={styles.noAiP}>L'intelligenza artificiale che stai cercando non esiste</p>
+                        <Link className={styles.noAiBtn} onClick={() => navigate(-1)}>Torna indietro</Link>
                     </div>
                 </>
             ) : (
                 <>
                 {/* Sezione logo e rating */}
-                <section className="section-logo-title">
-                    <div className="container details-flex-title">
-                        <img className="details-logo" src={singleAI.logoUrl} alt="logo della AI" />
-                        <h2 className="details-title">{singleAI.title}</h2>
+                <section className={styles.sectionLogoTitle}>
+                    <div className={`container ${styles.detailsFlexTitle}`}>
+                        <img className={styles.detailsLogo} src={singleAI.logoUrl} alt="logo della AI" />
+                        <h2 className={styles.detailsTitle}>{singleAI.title}</h2>
                     </div>
-                    <div className="container details-rating">
-                        <p>Voto: {ratingIcon(singleAI.rating)}</p>
+                    <div className={`container ${styles.detailsLogoSection}`}>
+                        <div>              
+                            <p>Voto: {ratingIcon(singleAI.rating)}</p>
+                            <p className={styles.year}>Anno di rilascio: {singleAI.releaseYear}</p>
+                        </div> 
+
+                        <div>
+                            <Link className={styles.linkWebsite} to={singleAI.website}>{singleAI.website}</Link>
+                        </div>
                     </div>
                 </section>
-
+            
                 {/* Sezione sito web */}
-                <section className="details-website-section">
-                    <p className="site-text">Sito web:</p>
-                    <Link className="link-website" to={singleAI.website}>{singleAI.website}</Link>
-                </section>
+                          
+                <section className={styles.sectionDetails}>
+                    <div className={`container ${styles.details}`}>
+                        <div className={styles.flexBoxDetails}>
+                            <div className={styles.boxDetailsTitle}>
+                                <div className={styles.iconBox}>
+                                    <i className={`fa-regular fa-pen-to-square ${styles.iconCustom}`}></i>
+                                </div>
+                                <h3 className={styles.detailsTitleInfo}>_CosaFa?</h3>    
+                            </div>
+                                <p className={styles.detailsDescription}>{singleAI.description}</p>
+                        </div>
+                        <div className={styles.flexBoxDetails}>
+                            <div className={styles.boxDetailsTitle}>
+                                <div className={styles.iconBox}>
+                                    <i className={`fa-solid fa-layer-group ${styles.iconCustom}`}></i>
+                                </div>
+                                <h3 className={styles.detailsTitleInfo}>_SpecificheTecniche</h3>    
+                            </div>
+                            <div className={styles.boxDetails}>
 
-                <section>
-                    <div className="section-details container">
-                        <div className="flex-box-details">
-                            <i className="fa-regular fa-pen-to-square icon-custom"></i>
-                            <h3 className="details-title-info">Cosa fa?</h3>    
-                            <p className="details-description">{singleAI.description}</p>
-                        </div>
-                        <div className="flex-box-details">
-                            <i className="fa-solid fa-layer-group icon-custom"></i>
-                            <h3 className="details-title-info">Piattoforme supportate</h3>    
-                            <p className="details-description">{singleAI.platforms.join(", ")}</p>
-                        </div>
-                        <div className="flex-box-details">
-                            <i className="fa-solid fa-gear icon-custom"></i>
-                            <h3 className="details-title-info">Integrazioni</h3>    
-                            <p className="details-description">{singleAI.integrations.join(", ")}</p>
-                        </div>
-                    </div>
-                </section>
+                                <div>
+                                    <div className="mb-20">
+                                        <h4>PIATTAFORME SUPPORTATE</h4>
+                                        <p className={styles.detailsDescription}>{singleAI.platforms.join(", ")}</p>
+                                    </div>
+                                    <div className="mb-20">
+                                        <h4>INTEGRAZIONI DISPONIBILI</h4>
+                                        <p className={styles.detailsDescription}>{singleAI.integrations.join(", ")}</p>
+                                    </div>
+                                </div>
+                                
+                                <div>
+                                    <div className="mb-20">
+                                        <h4>LINGUE SUPPORTATE</h4>
+                                        <p className={styles.detailsDescription}>{singleAI.supportedLanguages.join(", ")}</p>
+                                    </div>
+                                    <div className="mb-20">
+                                        <h4>LIVELLO DI PRIVACY</h4>
+                                        <p className={styles.detailsDescription}>{singleAI.privacyLevel}</p>
+                                    </div>
+                                </div>
 
-                <section className="section2-background">
-                    <div className="section-details container">
-                        <div className="flex-box-details">
-                            <i className="fa-solid fa-coins icon-custom"></i>
-                            <h3 className="details-title-info">Quanto costa?</h3>
-                            <p className="details-description">{singleAI.price}</p>
+                            </div>
                         </div>
-                        <div className="flex-box-details">
-                            <i className="fa-regular fa-face-smile icon-custom"></i>
-                            <h3 className="details-title-info">Versione gratuita?</h3>
-                            <p className="details-description">{singleAI.hasFreeVersion === true ? "Sì" : "No"}</p>
-                        </div>
-                        <div className="flex-box-details">
-                            <i className="fa-solid fa-globe icon-custom"></i>
-                            <h3 className="details-title-info">Altre info</h3>
-                            <p className="details-description">Linguaggi supportati: {singleAI.supportedLanguages.join(", ")}</p>
-                            <p className="details-description">Livello di privacy: {singleAI.privacyLevel}</p>
-                            <p className="details-description">Anno di rilascio: {singleAI.releaseYear}</p>
-                        </div>
-                    </div>
-                </section>
 
+                        <div className={styles.flexBoxDetails}>
+                            <div className={styles.boxDetailsTitle}>
+                                <div className={styles.iconBox}>
+                                    <i className={`fa-solid fa-coins ${styles.iconCustom}`}></i>
+                                </div>
+                                <h3 className={styles.detailsTitleInfo}>_Costi&Modelli</h3>
+                            </div> 
+                                                          
+                            <div className={styles.boxDetails}>
+                                <div>
+                                    <h4>Costo</h4>
+                                    <p className={styles.detailsDescription}>{singleAI.price}</p>
+                                </div>
+                                <div>
+                                    <h4>HA UNA VERSIONE GRATUITA ?</h4>
+                                    <p className={styles.detailsDescription}>{singleAI.hasFreeVersion === true ? "Sì" : "No"}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                     
+                </section>
+            
                 </>
-                )}
+            )}
         </main>
-    )
-}
-
-export default DettagliIA
+    );
+};

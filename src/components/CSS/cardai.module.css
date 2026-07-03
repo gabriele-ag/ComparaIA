@@ -1,0 +1,162 @@
+.cardAi {
+    height: 100%;
+    color: var(--common-color-site-4);
+    border: 1px solid rgb(30 41 59 / 0.8);
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgb(15 23 42 / 0.6);
+    transition: background-color 0.2s ease-in-out;
+    transition: border 0.2s ease-in-out ;
+}
+
+.fallbackIconBox {
+    background-color: rgb(33, 44, 71);
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fallbackIconBox i {
+    color: var(--common-color-site-4);
+    font-size: 14px;
+}
+
+.cardAi:hover {
+    background-color: rgb(15, 23, 42);
+    border: 1px solid var(--common-color-site-3);
+}
+
+.cardAi:hover .fallbackIconBox {
+    background-color: var(--common-color-site-2);
+}
+
+.cardTitle {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.cardSubtitle {
+    font-size: 13px;
+    font-weight: normal;
+    margin-bottom: 25px;
+    color: var(--common-color-site-3);
+}
+
+.cardBtnBox {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.upperCardZone {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cardLogo {
+    height: 10px;
+    width: 10px;
+}
+
+.btnDetails,
+.btnCompare {
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
+    color: var(--common-color-4);
+}
+
+.btnDetails {
+    background-color: var(--common-color-site-7);
+    color: var(--common-color-site-1);
+    border: 1px solid var(--common-color-site-7);;
+}
+
+.btnDetails:hover {
+    background-color: transparent;
+}
+
+.btnCompare {
+    background-color: var(--common-color-site-2);
+    color: var(--common-color-site-4);
+    border: 1px solid var(--common-color-site-2);
+}
+
+.btnCompare:hover {
+    color: var(--common-color-site-2);
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btnCompareDisabled {
+    opacity: 0.3;
+    cursor: not-allowed
+}
+
+.btnDelete,
+.btnEdit,
+.btnFav {
+    border: none;
+    background-color: transparent;
+    font-size: 15px;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+    color: white;
+}
+
+.btnDelete:hover {
+    color: rgb(255, 0, 85);
+}
+.btnEdit:hover {
+    color: var(--common-color-site-7);
+}
+
+.btnFav:hover {
+    color: var(--common-color-site-5);
+}
+
+.cardBtnBox2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+
+    
+
+    .cardAi {
+        margin-bottom: 20px;
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+
+    .cardBtnBox {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .btnFav,
+    .btnDetails,
+    .btnCompare {
+        margin-right: 0;
+    }
+
+    .cardBtnBox2 {
+        justify-content: space-around;
+    }
+}

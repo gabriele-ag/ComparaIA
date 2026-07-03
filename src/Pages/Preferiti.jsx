@@ -2,34 +2,47 @@ import { useContext } from "react"
 import { GlobalContext } from "../contexts/GlobalContext"
 import { Link } from "react-router-dom"
 
-import "./CSS/Preferiti.css"
-
+// CSS convertito in CSS Modules
+import styles from "./CSS/preferiti.module.css"
 
 const Preferiti = () => {
 
     const { favorites, removeFromFavorites } = useContext(GlobalContext);
 
     return (
-        <section className="fav-section">
+        <section className={styles.favSection}>
             <div className="container">
-                <h2 className="fav-title">I tuoi preferiti <i className="fa-solid fa-star fav-star"></i></h2>
+                <div className={styles.favTitleBox}>
+                    <h2 className={styles.favTitle}>
+                        _iTuoiPreferiti<i className={`fa-solid fa-star ${styles.favStar}`}></i>
+                    </h2>
+                </div>
+                
                 {favorites.length === 0 ? (
-                    <>
-                        <p className="fav-none">Oh no! Non ci sono ancora preferiti nella tua lista! </p>
-                        <Link to={"/listaia"} className="fav-btn-list">Vai alla lista</Link>
-                        <i className="fa-solid fa-arrow-left"></i>
-                    </>
+                    <div className={styles.favBoxNone}>
+                        <p className={styles.favNone}>
+                            Oh no! Non ci sono ancora preferiti nella tua lista!
+                        </p>
+                        <Link to="/listaia" className={styles.favBtnList}>
+                            <i className="fa-solid fa-arrow-left me-2"></i> Vai alla lista
+                        </Link>
+                    </div>
                 ) : (
                     <ul>
                         {favorites.map((curElem, index) => (
-                            <div key={index} className="fav-flex-box">
-                                <li key={index} className="fav-ai-box">
-                                    <h3 className="fav-title-ai">{curElem.title}</h3>
-                                    <p className="fav-category">{curElem.category}</p>
+                            <div key={index} className={styles.favFlexBox}>
+                                <li className={styles.favAiBox}>
+                                    <h3 className={styles.favTitleAi}>{curElem.title}</h3>
+                                    <p className={styles.favCategory}>{curElem.category}</p>
                                 </li>
-                                <div className="fav-btn-flex">
-                                    <Link to={`/listaia/${curElem.id}`} className="fav-btn-details">Vedi dettagli</Link>
-                                    <button className="fav-btn-erase" onClick={() => removeFromFavorites(curElem)}>
+                                <div className={styles.favBtnFlex}>
+                                    <Link to={`/listaia/${curElem.id}`} className={styles.favBtnDetails}>
+                                        Vedi dettagli
+                                    </Link>
+                                    <button 
+                                        className={styles.favBtnErase} 
+                                        onClick={() => removeFromFavorites(curElem)}
+                                    >
                                         <i className="fa-solid fa-trash"></i>
                                     </button>
                                 </div>
