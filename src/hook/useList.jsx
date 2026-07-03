@@ -23,8 +23,6 @@ export default function useList () {
     
                 const response = await fetch(`${urlList}`)
                 const data = await response.json()
-
-                console.log(data)
     
                 if(!response.ok) {
                     throw new Error(`Errore nella risposta: ${response.status}`)
