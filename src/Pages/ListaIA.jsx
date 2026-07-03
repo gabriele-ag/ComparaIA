@@ -197,14 +197,14 @@ export default function ListaIA() {
                             {filteredAI.length === 0 ? (
                                 <p className={styles.noResultSearch}>Nessun risultato. Cosa stai cercando? 🤔</p>
                             ) : (
-                                filteredAI.map((curElem) => (
-                                    <li key={curElem.id}>
+                                filteredAI.map((curElem) => (  
+                                                
+                                    <li key={curElem.id}>                                        
                                         <CardAI
                                             id={curElem.id}
                                             title={curElem.title}
                                             subtitle={curElem.category}
                                             details={curElem.id}
-                                            logoImg={curElem.logoUrl}
                                             toggle={() => toggleAISelected(curElem)}
                                             addRemCompare={selectedAI.find((curItem) => curItem.id === curElem.id)? "Rimuovi": "Metti a confronto"}
                                             disabledCompare={selectedAI.length >= 3 && !selectedAI.find((curItem) => curItem.id === curElem.id)}

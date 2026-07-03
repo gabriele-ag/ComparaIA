@@ -13,9 +13,27 @@
     transition: border 0.2s ease-in-out ;
 }
 
+.fallbackIconBox {
+    background-color: rgb(33, 44, 71);
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fallbackIconBox i {
+    color: var(--common-color-site-4);
+    font-size: 14px;
+}
+
 .cardAi:hover {
     background-color: rgb(15, 23, 42);
     border: 1px solid var(--common-color-site-3);
+}
+
+.cardAi:hover .fallbackIconBox {
+    background-color: var(--common-color-site-2);
 }
 
 .cardTitle {

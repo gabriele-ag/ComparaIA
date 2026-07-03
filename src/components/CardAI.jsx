@@ -4,7 +4,19 @@ import { GlobalContext } from "../contexts/GlobalContext";
 
 import styles from "./CSS/cardai.module.css"
 
-export default function cardAI({title, subtitle, details, toggle, addRemCompare, disabledCompare, onDelete, onEdit, id, logoImg}) {
+const categoryIcons = {
+  "Multimedia & Editing": "fa-film",
+  "Design & Presentazioni": "fa-palette",
+  "Assistenti Generali": "fa-robot",
+  "Scrittura & Contenuti": "fa-pen-nib",
+  "Performance Management": "fa-chart-line",
+  "Ricerca AI": "fa-magnifying-glass",
+  "Marketing & SEO": "fa-bullhorn",
+};
+
+export default function cardAI({title, subtitle, details, toggle, addRemCompare, disabledCompare, onDelete, onEdit, id}) {
+
+    const iconClass = categoryIcons[subtitle] || "fa-brain";
     
     const {favorites, addToFavorites, removeFromFavorites} = useContext(GlobalContext)
 
@@ -21,8 +33,8 @@ export default function cardAI({title, subtitle, details, toggle, addRemCompare,
 
             <div className={styles.upperCardZone}>
 
-                <div>
-                    <img className={styles.cardLogo} src={logoImg} alt="logo" />
+                <div className={styles.fallbackIconBox}>
+                    <i className={`fa-solid ${iconClass}`}></i>
                 </div>
                 
                 <div className={styles.cardBtnBox2}>

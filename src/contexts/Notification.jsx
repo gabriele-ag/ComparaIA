@@ -16,9 +16,9 @@ export const NotificationProvider = ({ children }) => {
 
   const getIcon = (type) => {
     switch (type) {
-      case "add": return <p className={styles.add}></p>;
-      case "modify": return <p className={styles.edit}></p>;
-      case "delete": return <p className={styles.delete}></p>;
+      case "add": return <p className={styles.add}>/</p>;
+      case "modify": return <p className={styles.edit}>/</p>;
+      case "delete": return <p className={styles.delete}>/</p>;
       case "error": return <p className={styles.error}>Errore imprevisto nell'operazione</p>;
       default: return <i className="fa-solid fa-circle-info"></i>;
     }
