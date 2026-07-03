@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 
 import styles from "./CSS/modalmodifica.module.css"
 
-const ModalModifica = ({elemAI, onClose, onSubmit}) => {
+export default function ModalModifica ({elemAI, onClose, onSubmit}) {
 
   const [errors, setErrors] = useState({});
 
@@ -305,5 +305,3 @@ const ModalModifica = ({elemAI, onClose, onSubmit}) => {
 
   return ReactDOM.createPortal(modalContent, modalRoot);
 }
-
-export default ModalModifica

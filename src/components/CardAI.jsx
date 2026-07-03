@@ -4,7 +4,7 @@ import { GlobalContext } from "../contexts/GlobalContext";
 
 import styles from "./CSS/cardai.module.css"
 
-const cardAI = ({title, subtitle, details, toggle, addRemCompare, disabledCompare, onDelete, onEdit, id, logoImg}) => {
+export default function cardAI({title, subtitle, details, toggle, addRemCompare, disabledCompare, onDelete, onEdit, id, logoImg}) {
     
     const {favorites, addToFavorites, removeFromFavorites} = useContext(GlobalContext)
 
@@ -46,5 +46,3 @@ const cardAI = ({title, subtitle, details, toggle, addRemCompare, disabledCompar
         </>
     )
 }
-
-export default cardAI

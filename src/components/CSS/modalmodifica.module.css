@@ -17,7 +17,7 @@
     backdrop-filter: blur(25px);
      -webkit-backdrop-filter: blur(25px);
     z-index: 9999;
-    color: var(--common-color-4);
+    color: var(--common-color-site-4);
     padding: 100px 0;
     overflow-y: auto;
 }
@@ -71,9 +71,9 @@
 }
 
 .editAiInput:focus {
-    color: var(--common-color-site-4);
-    color: #181817;
+    color: var(--common-color-site-1);
     border-color: var(--common-color-site-3);
+    background-color: var(--common-color-site-4);
 }
 
 
@@ -126,7 +126,7 @@
 }
 
 .errorMsg {
-    color: var(--common-color-6);
+    color: var(--common-color-site-6);
     font-size: 15px;
     margin-top: 5px;
     margin-bottom: 0;

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import ReactDOM from "react-dom";
 import styles from "./CSS/modalconfronto.module.css"; // Aggiornato all'uso dei moduli CSS in camelCase
 
-const ModalConfronto = ({ isOpen, onClose, items }) => {
+export default function ModalConfronto({ isOpen, onClose, items }) {
 
     // È aperto?
     if (!isOpen) return null;
@@ -162,5 +162,3 @@ const ModalConfronto = ({ isOpen, onClose, items }) => {
 
     return ReactDOM.createPortal(modalContent, document.getElementById("modal-root"));
 };
-
-export default ModalConfronto;

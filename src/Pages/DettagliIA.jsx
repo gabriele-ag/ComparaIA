@@ -5,7 +5,7 @@ import { useParams, Link, useNavigate } from "react-router-dom"
 
 import styles from "./CSS/dettagli.module.css"
 
-const DettagliIA = () => {
+export default function DettagliIA () {
 
     const { id } = useParams()
     const navigate = useNavigate()
@@ -148,7 +148,5 @@ const DettagliIA = () => {
                 </>
             )}
         </main>
-    )
-}
-
-export default DettagliIA
+    );
+};

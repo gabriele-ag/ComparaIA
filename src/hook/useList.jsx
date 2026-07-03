@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from "react"
 
-const useList = () => {
+export default function useList () {
 
     const [listAI, setListAI] = useState([])
     const [favorites, setFavorites] = useState(() => {
@@ -168,5 +168,3 @@ const useList = () => {
             deleteAI
         };
 }
-
-export default useList

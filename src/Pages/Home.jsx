@@ -1,7 +1,7 @@
 import { Link } from 'react-router'; 
 import styles from "./CSS/home.module.css"; 
 
-const Home = () => {
+export default function Home() {
     return (
         <main>     
             {/* <video 
@@ -40,5 +40,3 @@ const Home = () => {
         </main>       
     );
 };
-
-export default Home;

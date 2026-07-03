@@ -1,4 +1,6 @@
 import { GlobalContext } from "../contexts/GlobalContext"
+import { useNotification } from "../contexts/Notification";
+
 import { useState, useMemo, useContext, useEffect, useCallback } from "react"
 
 // Import della card
@@ -23,10 +25,11 @@ const debounce = (callback, delay = 500) => {
     }
 }
 
-const ListaIA = () => {
+export default function ListaIA() {
 
     // GlobalContext per richiamo degli elementi dal back-end
     const { getListAI, listAI, getSingleAI, updateAI, deleteAI } = useContext(GlobalContext)
+    const { showNotification } = useNotification();
 
     useEffect(() => {
         getListAI();
@@ -95,7 +98,7 @@ const ListaIA = () => {
 
     const confirmEditAI = (ai) => {
         setToEdit(ai)
-        setIsEditModalOpen(true)
+        setIsEditModalOpen(true)     
     };
 
     // Gestione della cancellazione
@@ -104,7 +107,7 @@ const ListaIA = () => {
 
         try {
             await deleteAI(aiToDelete.id);
-            alert(`Hai eliminato con successo:"${aiToDelete.title}"`);
+            showNotification("L'elemento è stato rimosso dalla dashboard. 🗑️", "delete");
             setIsDeleteModalOpen(false);
             setAiToDelete(null);
         } catch (error) {
@@ -118,7 +121,7 @@ const ListaIA = () => {
         try {
             await updateAI(toEdit.id, editedAI)
             await getListAI()
-            alert(`IA ${toEdit.title} modificata!`)
+            showNotification("Modifiche salvate correttamente. 💾", "modify");       
             setIsEditModalOpen(false)
             setToEdit(null);
         } catch(error) {
@@ -249,5 +252,3 @@ const ListaIA = () => {
         </>
     )
 }
-
-export default ListaIA

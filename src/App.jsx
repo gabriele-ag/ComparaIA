@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { NotificationProvider } from "./contexts/Notification.jsx";
 
 // Importo il guestlayout con AppHeader
 import GuestLayout from "./layouts/GuestLayout"
@@ -20,6 +21,7 @@ function App() {
 
   return (
     <>
+    <NotificationProvider>
     <GlobalProvider>
       <BrowserRouter>
         <Routes>
@@ -34,6 +36,7 @@ function App() {
         </Routes>
       </BrowserRouter>
     </GlobalProvider>
+    </NotificationProvider>
     </>
   )
 }

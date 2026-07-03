@@ -1,13 +1,15 @@
 import { GlobalContext } from "../contexts/GlobalContext";
+import { useNotification } from "../contexts/Notification";
 
 import { useContext, useState, useRef, useEffect } from "react";
 
 import styles from "./CSS/aggiungiia.module.css";
 
-const AggiungiIA = () => {
+export default function AggiungiIA () {
   const [errors, setErrors] = useState({});
 
   const { createNewAI } = useContext(GlobalContext);
+  const { showNotification } = useNotification();
 
   const titleRef = useRef(null);
   const brandRef = useRef(null);
@@ -106,7 +108,7 @@ const AggiungiIA = () => {
 
     try {
       await createNewAI(newAI);
-      alert("IA aggiunta con successo!");
+      showNotification("Nuova Intelligenza Artificiale inserita con successo! 🚀", "add");
       setErrors({});
       event.target.reset();
     } catch (error) {
@@ -323,5 +325,3 @@ const AggiungiIA = () => {
     </section>
   );
 };
-
-export default AggiungiIA;
