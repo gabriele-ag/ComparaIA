@@ -1,0 +1,73 @@
+/* NOTFOUND Utilities */
+
+.mBottom {
+    margin-bottom: 20px;
+}
+
+/**/
+
+.notfoundBox {
+    text-align: center;
+    padding: 300px 0;
+}
+
+.notfoundTitle,
+.notfoundP {
+    color: var(--common-color-site-4);
+}
+
+.notfoundTitle {
+    font-size: 50px;
+}
+
+.notfoundP {
+    font-size: 20px;
+}
+
+.btn {
+    border-radius: 10px;
+    padding: 10px 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.notfoundBtnBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.notfoundBtnHome {
+    border: 1px solid var(--common-color-site-7);
+    background-color: var(--common-color-site-7);
+    color: var(--common-color-site-1);
+    transition: color 0.5s ease-in-out;
+}
+
+.notfoundBtnHome:hover {
+    background-color: transparent;
+    color: var(--common-color-site-7);
+}
+
+.notfoundBtnPP {
+    border: 1px solid var(--common-color-site-2);
+    background-color: var(--common-color-site-2);
+    color: var(--common-color-site-4);
+}
+
+.notfoundBtnPP:hover {
+    background-color: transparent;
+    color: var(--common-color-site-2);
+}
+
+
+@media screen and (max-width: 320px) {
+
+    .notfoundTitle {
+        font-size: 30px;
+    }
+
+    .notfoundP {
+        font-size: 18px;
+    }
+}
