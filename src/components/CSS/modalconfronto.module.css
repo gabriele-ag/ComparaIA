@@ -1,29 +1,21 @@
-:root {
-  --common-color-1: #181817;
-  --common-color-2: #f1d302;
-  --common-color-3: #00bfa6;
-  --common-color-4: #ffffff;
-  --common-color-5: #52489c;
-}
-
-.modal-overlay {
+.modalOverlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgb(24, 24, 23, 0.5);
+  background-color: var(--common-color-site-1);
   backdrop-filter: blur(25px);
   -webkit-backdrop-filter: blur(25px);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 9999;
-  color: var(--common-color-4);
+  color: var(--common-color-site-4);
   padding: 100px 0;
 }
 
-.modal-content {
+.modalContent {
   height: 100vh;
   width: 100vw;
   overflow-y: auto;
@@ -31,59 +23,59 @@
   border-radius: 10px;
 }
 
-.modal-box-title {
+.modalBoxTitle {
   display: flex;
   justify-content: flex-end;
   gap: 30px;
 }
 
-.modal-btn-close {
+.modalBtnClose {
   background-color: transparent;
-  color: var(--common-color-4);
+  color: var(--common-color-site-4);
   border: none;
   font-size: 20px;
   cursor: pointer;
   transition: color 0.2s ease-in-out;
 }
 
-.modal-btn-close:hover {
+.modalBtnClose:hover {
   color: var(--common-color-site-2);
 }
 
-.modal-title {
+.modalTitle {
   text-align: center;
   margin-bottom: 50px;
 }
 
-.modal-rating {
-  color: #f1d302;
+.modalRating {
+  color: var(--common-color-site-5);
 }
 
 /* TABELLA */
 
-.modal-feature-title {
+.modalFeatureTitle {
   color: var(--common-color-site-3);
 }
 
-.modal-website-ai {
+.modalWebsiteAi {
   transition: color 0.5s ease-in-out;
 }
 
-.modal-website-ai:hover {
+.modalWebsiteAi:hover {
   text-decoration: underline;
   color: var(--common-color-site-3);
 }
 
-.modal-compare-table {
+.modalCompareTable {
   width: 100%;
   border-collapse: collapse;
   overflow-x: auto;
   background-color: var(--common-color-site-1);
 }
 
-.modal-compare-table th,
-.modal-compare-table td {
-  border: 1px solid #ccc;
+.modalCompareTable th,
+.modalCompareTable td {
+  border: 1px solid var(--common-color-site-4);
   padding: 15px 10px;
   text-align: left;
   word-break: break-word;
@@ -91,24 +83,24 @@
   min-width: 150px;
 }
 
-.modal-compare-table th {
+.modalCompareTable th {
   background-color: var(--common-color-site-2);
   font-weight: bold;
 }
 
 @media (max-width: 768px) {
-  .modal-compare-table {
+  .modalCompareTable {
     overflow-x: auto;
   }
 
-  .modal-table-wrapper {
+  .modalTableWrapper {
     width: 100%;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
 
-  .modal-compare-table th,
-  .modal-compare-table td {
+  .modalCompareTable th,
+  .modalCompareTable td {
     font-size: 13px;
   }
 }
