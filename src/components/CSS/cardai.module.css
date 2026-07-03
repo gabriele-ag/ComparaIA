@@ -85,6 +85,7 @@
 }
 
 .btnDetails:hover {
+    color: var(--common-color-site-7);
     background-color: transparent;
 }
 
